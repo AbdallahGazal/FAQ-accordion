@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(275, 100%, 97%);
+  display: grid;
+  place-items: center;
+  color: #341636;
+}
+
+.FAQ {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  width: 600px;
+  min-height: 500px;
+  box-shadow: 0 0 50px rgb(0, 0, 0, 10%);
+}
+
+.title {
+  margin-left: 10%;
+  font-size: 50px;
+  position: relative;
+}
+
+.questions {
+  margin: 10px;
+}
+
+.q4 {
+  margin-bottom: 0;
+}
+
+.q {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.q:hover {
+  color: #ae33f1;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/images/icon-star.svg");
+  left: -55px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.ans {
+  overflow: hidden;
+  height: 0;
+  color: hsl(292, 16%, 49%);
+  transition: all 0.5s;
+}
+
+.icon--1 {
+  position: absolute;
+  right: 40px;
+  transform: translateY(-15%);
+  background-image: url(assets/images/icon-plus.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.icon--2 {
+  position: absolute;
+  right: 40px;
+  transform: translateY(-15%);
+  background-image: url(assets/images/icon-plus.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.icon--3 {
+  position: absolute;
+  right: 40px;
+  transform: translateY(-15%);
+  background-image: url(assets/images/icon-plus.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.icon--4 {
+  position: absolute;
+  right: 40px;
+  transform: translateY(-15%);
+  background-image: url(assets/images/icon-plus.svg);
+  width: 30px;
+  height: 30px;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.064);
+}
+
+.show--ans1 {
+  height: 96px;
+}
+
+.show--ans2 {
+  height: 76.8px;
+}
+
+.show--ans3 {
+  height: 76.8px;
+}
+
+.show--ans4 {
+  height: 76.8px;
+}
+
+.attribution {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  .FAQ {
+    width: calc(100% - 40px);
+  }
+
+  .show--ans1 {
+    height: auto;
+  }
+
+  .show--ans2 {
+    height: auto;
+  }
+
+  .show--ans3 {
+    height: auto;
+  }
+
+  .show--ans4 {
+    height: auto;
+  }
+
+  .FAQ {
+    border-radius: 10px;
+  }
+}
